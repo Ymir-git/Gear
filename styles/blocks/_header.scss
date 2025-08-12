@@ -1,0 +1,104 @@
+@use '../helpers' as *;
+
+.header {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 18px;
+  font-weight: 400;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-block: 20px;
+    position: relative;
+
+    &-logo {
+      display: flex;
+      z-index: 9999;
+      flex-grow: 1;
+    }
+
+    &-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      @include mobile {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        gap: 16px;
+        padding-block: 85px 40px;
+        transform: translateY(-110%);
+        transition: transform .5s ease;
+        background-color: var(--color-dark);
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        z-index: 999;
+
+        &--open {
+          transform: translateY(0px);
+        }
+      }
+
+      &-list {
+        display: flex;
+        gap: 77px;
+        text-transform: uppercase;
+
+        @include tablet {
+          gap: 50px;
+        }
+
+        @include mobile {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+      }
+
+      &-link {
+        background-image: linear-gradient(to bottom,
+            transparent 0%,
+            transparent 95%,
+            var(--color-accent) 90%,
+            var(--color-accent) 100%,
+          );
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 500ms, color 500ms;
+
+        &:hover {
+          color: var(--color-accent);
+          background-size: 100% 100%;
+          background-position-x: left;
+        }
+
+        &.is-active {
+          color: var(--color-accent);
+          font-weight: 500;
+          pointer-events: none;
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+    .menu__btn {
+      display: none;
+
+      @include mobile {
+        display: block;
+        z-index: 9999;
+
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

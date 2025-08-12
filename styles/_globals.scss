@@ -1,0 +1,35 @@
+@use 'helpers' as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--color-dark-33);
+  font-family: var(--font-family-base);
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+h1, .h1{
+  @include fluid-text(40, 32);
+
+  line-height: fluid(61, 52);
+}
+
+h2, .h2 {
+  font-size: 36px;
+}
+
+h3, .h3 {
+  font-size: 24px;
+  font-weight: 500;
+} 

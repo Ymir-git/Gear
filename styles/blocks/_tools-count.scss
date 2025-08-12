@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+
+.tools__count {
+  padding-block: 70px;
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &-item {
+    max-width: 360px;
+    padding: 22px 49px;
+    text-align: center;
+
+    h3 {
+      padding-block: 8px 16px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      color: var(--color-dark-47);
+    }
+  }
+
+  .item-conunt {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  .conut-1 {
+    color: #0086D6;
+  }
+
+  .conut-2 {
+    color: #2BA093;
+  }
+
+  .conut-3 {
+    color: #F36;
+  }
+}
