@@ -505,7 +505,7 @@ h3, .h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/hero/bg.png);
+  background-image: url(../../images/hero/bg.png);
   background-repeat: no-repeat;
   background-size: clamp(19.625rem, 17.506127451rem + 8.6928104575vw, 27.9375rem);
 }
