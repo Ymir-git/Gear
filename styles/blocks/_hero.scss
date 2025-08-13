@@ -92,7 +92,7 @@
       align-items: center;
       background-image: url(../images/hero/bg.png);
       background-repeat: no-repeat;
-      background-size: fluid(447, 314);
+      background-size: fluid(447, 280);
 
       .gear {
         width: fluid(142, 100);
@@ -103,8 +103,8 @@
     &-bg {
       display: flex;
       justify-content: center;
-      width: fluid(447, 314);
-      height: fluid(447, 314);
+      width: fluid(447, 280);
+      height: fluid(447, 280);
       position: relative;
       animation-name: spin;
       animation-duration: 10s;
@@ -131,7 +131,7 @@
 
       .figma {
         position: absolute;
-        top: -51px;
+        top: -10%;
 
         img {
           width: fluid(41, 29);
@@ -140,8 +140,8 @@
 
       .invision {
         position: absolute;
-        top: 60px;
-        right: -15px;
+        top: 15%;
+        right: -4%;
 
         img {
           width: fluid(61, 43);
@@ -150,8 +150,8 @@
 
       .git {
         position: absolute;
-        bottom: 60px;
-        right: -15px;
+        bottom: 15%;
+        right: -4%;
 
         img {
           width: fluid(61, 43);
@@ -160,7 +160,7 @@
 
       .xd {
         position: absolute;
-        bottom: -51px;
+        bottom: -10%;
 
         img {
           width: fluid(50, 35);
@@ -169,8 +169,8 @@
 
       .vs-code {
         position: absolute;
-        bottom: 60px;
-        left: -15px;
+        bottom: 15%;
+        left: -4%;
 
         img {
           width: fluid(51, 36);
@@ -179,8 +179,8 @@
 
       .pc {
         position: absolute;
-        top: 60px;
-        left: -15px;
+        top: 15%;
+        left: -4%;
 
         img {
           width: fluid(60, 42);

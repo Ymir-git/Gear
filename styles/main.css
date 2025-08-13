@@ -507,7 +507,7 @@ h3, .h3 {
   align-items: center;
   background-image: url(../images/hero/bg.png);
   background-repeat: no-repeat;
-  background-size: clamp(19.625rem, 17.506127451rem + 8.6928104575vw, 27.9375rem);
+  background-size: clamp(17.5rem, 14.8394607843rem + 10.9150326797vw, 27.9375rem);
 }
 .hero__logos-back .gear {
   width: clamp(6.25rem, 5.5808823529rem + 2.7450980392vw, 8.875rem);
@@ -516,8 +516,8 @@ h3, .h3 {
 .hero__logos-bg {
   display: flex;
   justify-content: center;
-  width: clamp(19.625rem, 17.506127451rem + 8.6928104575vw, 27.9375rem);
-  height: clamp(19.625rem, 17.506127451rem + 8.6928104575vw, 27.9375rem);
+  width: clamp(17.5rem, 14.8394607843rem + 10.9150326797vw, 27.9375rem);
+  height: clamp(17.5rem, 14.8394607843rem + 10.9150326797vw, 27.9375rem);
   position: relative;
   animation-name: spin;
   animation-duration: 10s;
@@ -540,46 +540,46 @@ h3, .h3 {
 }
 .hero__logos-bg .figma {
   position: absolute;
-  top: -51px;
+  top: -10%;
 }
 .hero__logos-bg .figma img {
   width: clamp(1.8125rem, 1.6213235294rem + 0.7843137255vw, 2.5625rem);
 }
 .hero__logos-bg .invision {
   position: absolute;
-  top: 60px;
-  right: -15px;
+  top: 15%;
+  right: -4%;
 }
 .hero__logos-bg .invision img {
   width: clamp(2.6875rem, 2.4007352941rem + 1.1764705882vw, 3.8125rem);
 }
 .hero__logos-bg .git {
   position: absolute;
-  bottom: 60px;
-  right: -15px;
+  bottom: 15%;
+  right: -4%;
 }
 .hero__logos-bg .git img {
   width: clamp(2.6875rem, 2.4007352941rem + 1.1764705882vw, 3.8125rem);
 }
 .hero__logos-bg .xd {
   position: absolute;
-  bottom: -51px;
+  bottom: -10%;
 }
 .hero__logos-bg .xd img {
   width: clamp(2.1875rem, 1.9485294118rem + 0.9803921569vw, 3.125rem);
 }
 .hero__logos-bg .vs-code {
   position: absolute;
-  bottom: 60px;
-  left: -15px;
+  bottom: 15%;
+  left: -4%;
 }
 .hero__logos-bg .vs-code img {
   width: clamp(2.25rem, 2.0110294118rem + 0.9803921569vw, 3.1875rem);
 }
 .hero__logos-bg .pc {
   position: absolute;
-  top: 60px;
-  left: -15px;
+  top: 15%;
+  left: -4%;
 }
 .hero__logos-bg .pc img {
   width: clamp(2.625rem, 2.3382352941rem + 1.1764705882vw, 3.75rem);
