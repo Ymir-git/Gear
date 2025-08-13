@@ -37,7 +37,7 @@
         transform: translateY(-110%);
         transition: transform .5s ease;
         background-color: var(--color-dark);
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
         z-index: 999;
 
         &--open {
@@ -83,7 +83,6 @@
           color: var(--color-accent);
           font-weight: 500;
           pointer-events: none;
-          background-size: 100% 100%;
         }
       }
     }
@@ -101,4 +100,22 @@
       }
     }
   }
+}
+
+.menu--close {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: background-color .5s ease;
+}
+.menu--close.menu--open {
+  display: block;
+}
+.no-scroll {
+  overflow: hidden;
 }

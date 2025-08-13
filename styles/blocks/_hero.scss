@@ -11,7 +11,7 @@
     @include tablet {
       flex-direction: column-reverse;
       align-items: center;
-      gap: 0px
+      gap: 0px;
     }
   }
 
@@ -87,20 +87,25 @@
     padding-block: fluid(112, 60) fluid(106, 60);
 
     &-back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-image: url(/images/hero/bg.png);
       background-repeat: no-repeat;
       background-size: fluid(447, 314);
+
+      .gear {
+        width: fluid(142, 100);
+        position: absolute;
+      }
     }
 
     &-bg {
       display: flex;
       justify-content: center;
-      align-items: center;
       width: fluid(447, 314);
       height: fluid(447, 314);
-      ;
       position: relative;
-
       animation-name: spin;
       animation-duration: 10s;
       animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -122,10 +127,6 @@
         100% {
           transform: rotate(0deg);
         }
-      }
-
-      .gear {
-        width: fluid(142, 100);
       }
 
       .figma {
