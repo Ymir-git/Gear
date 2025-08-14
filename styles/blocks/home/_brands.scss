@@ -1,0 +1,55 @@
+@use '../../helpers' as *;
+
+.brands {
+  .section__inner {
+    padding-block: 88px 80px;
+    gap: 32px;
+
+    .section__text {
+      &-subtitle {
+        font-size: 20px;
+      }
+    }
+
+    @include mobile {
+      padding-block: 102px 93px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &__item {
+      max-width: 360px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      border-radius: 8px;
+      transition: 0.5s ease;
+      cursor: default;
+
+      &:hover {
+        box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.10);
+      }
+
+      &-img {
+        margin-bottom: 20px;
+      }
+
+      &-text {
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        font-family: var(--font-family-accent);
+        color: var(--color-dark-47);
+      }
+    }
+  }
+}

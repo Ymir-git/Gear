@@ -1,0 +1,77 @@
+@use '../../helpers' as *;
+
+.reviews{
+  background-color: #F9F9F9;
+
+  .section__inner{
+    gap: 50px;
+
+    @include mobile {
+      gap: 32px;
+      padding-block: 50px 100px;
+    }
+
+    .section__text {
+      &-subtitle {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-list{
+    display: flex;
+    align-items: center;
+    gap: 31px;
+
+    @include mobile{
+      flex-direction: column;
+    }
+    
+    &__item{
+      max-width: 360px;
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid #DEDEDE;
+      background-color: var(--color-light);
+      transition: .5s ease;
+
+      &:hover{
+        box-shadow: 0 16px 50px 0 rgba(0, 0, 0, 0.08);
+      }
+
+      blockquote{
+        padding-block: 21px 10px;
+
+        p{
+          line-height: 27px;
+          letter-spacing: 0.2px;
+          color: var(--color-dark-47);
+        }
+      }
+
+      &-autor{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        img{
+          border-radius: 50px;
+        }
+
+        .autor{
+          line-height: 24px;
+          letter-spacing: 0.2px;
+
+          &-name{
+            font-size: 18px;
+            font-weight: 500;
+          }
+          &-job{
+            font-size: 14px;
+            color: #30444E;
+          }
+        }
+      }
+    }
+  }
+}

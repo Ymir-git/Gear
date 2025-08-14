@@ -35,7 +35,7 @@ $mobile-s:480.98px;
   }
 }
 @mixin tablet{
-  @media (width <= 1070.98px) {
+  @media (width <= 1140.98px) {
     @content;
   }
 }
