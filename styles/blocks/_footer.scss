@@ -27,7 +27,7 @@
       align-items: center;
       gap: 13px;
 
-      @include mobile-s {
+      @include mobile {
         flex-direction: column;
       }
 
@@ -48,5 +48,96 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
       }
     }
+  }
+
+  .main{
+    border-top: 1px solid #666;
+    box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.25);
+
+    &-wrapper{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding-block: 50px 36px;
+
+      @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile-s{
+        grid-template-columns: none;
+      }
+    }
+
+    .social{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      &-logo,&-list{
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+
+        p{
+          font-family: 'Montserrat Alternates';
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 35px;
+          transition: .5s ease;
+
+          &:hover{
+            color: var(--color-accent);
+          }
+        }
+      }
+
+      &-link{
+        a > svg{
+          circle{
+            transition: .5s ease;
+          }
+          path{
+            transition: .5s ease;
+          }
+        }
+        &:hover{
+          a > svg{
+            circle{
+              fill: var(--color-accent);
+            }
+            path{
+              fill: var(--color-dark);
+            }
+          }
+        }
+      }
+    }
+
+    .resource,.policy,.contacts{
+      line-height: 35px;
+
+      &-title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 8px;
+      }
+
+      a{
+        transition: .2s ease;
+
+        &:hover{
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+
+  .copy{
+    background-color: #1D292F;
+    padding-block: 15px;
+    text-align: center;
+    line-height: 30px;
   }
 }

@@ -147,9 +147,22 @@ select {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("MontserratAlternates-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  height: 100%;
+  scrollbar-gutter: stable;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   color: var(--color-dark-33);
   font-family: var(--font-family-base);
 }
@@ -213,7 +226,7 @@ h3, .h3 {
   --font-family-base: "Poppins", sans-serif;
   --font-family-accent: "Roboto", sans-serif;
   --container-width: 1140px;
-  --container-padding-x: 15px;
+  --container-padding-x: 32px;
 }
 
 .button {
@@ -465,7 +478,7 @@ h3, .h3 {
   align-items: center;
   gap: 13px;
 }
-@media (width <= 480.98px) {
+@media (width <= 767.98px) {
   .footer .subscribe__form {
     flex-direction: column;
   }
@@ -484,6 +497,79 @@ h3, .h3 {
   padding: 12px 31px;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.footer .main {
+  border-top: 1px solid #666;
+  box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+.footer .main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-block: 50px 36px;
+}
+@media (width <= 1140.98px) {
+  .footer .main-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width <= 480.98px) {
+  .footer .main-wrapper {
+    grid-template-columns: none;
+  }
+}
+.footer .main .social {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer .main .social-logo, .footer .main .social-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer .main .social-logo p, .footer .main .social-list p {
+  font-family: "Montserrat Alternates";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  transition: 0.5s ease;
+}
+.footer .main .social-logo p:hover, .footer .main .social-list p:hover {
+  color: var(--color-accent);
+}
+.footer .main .social-link a > svg circle {
+  transition: 0.5s ease;
+}
+.footer .main .social-link a > svg path {
+  transition: 0.5s ease;
+}
+.footer .main .social-link:hover a > svg circle {
+  fill: var(--color-accent);
+}
+.footer .main .social-link:hover a > svg path {
+  fill: var(--color-dark);
+}
+.footer .main .resource, .footer .main .policy, .footer .main .contacts {
+  line-height: 35px;
+}
+.footer .main .resource-title, .footer .main .policy-title, .footer .main .contacts-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.footer .main .resource a, .footer .main .policy a, .footer .main .contacts a {
+  transition: 0.2s ease;
+}
+.footer .main .resource a:hover, .footer .main .policy a:hover, .footer .main .contacts a:hover {
+  color: var(--color-accent);
+}
+.footer .copy {
+  background-color: #1D292F;
+  padding-block: 15px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .hero {
