@@ -355,7 +355,7 @@ h3, .h3 {
 .header__inner-logo {
   display: flex;
   z-index: 9999;
-  flex-grow: 1;
+  flex-grow: 1.24;
 }
 .header__inner-menu {
   display: flex;
