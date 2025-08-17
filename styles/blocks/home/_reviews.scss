@@ -20,12 +20,10 @@
 
   &-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 31px;
-
-    @include mobile{
-      flex-direction: column;
-    }
+    gap: 30px;
     
     &__item{
       max-width: 360px;

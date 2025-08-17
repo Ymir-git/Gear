@@ -5,12 +5,13 @@
 
   &-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
     gap: 30px;
 
     @include mobile {
-      align-items: center;
-      flex-direction: column;
       gap: 16px;
     }
   }

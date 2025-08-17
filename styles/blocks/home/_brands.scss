@@ -18,12 +18,10 @@
 
   &-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 30px;
-
-    @include mobile {
-      flex-direction: column;
-    }
 
     &__item {
       max-width: 360px;
