@@ -1,14 +1,11 @@
 @use '../../helpers' as *;
 
 .tools__list{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding-block: 52px;
-
-  @include tablet1200 {
-    grid-template-columns: none;
-  }
 }
 
 .black-btn { 

@@ -282,8 +282,6 @@ h3, .h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 0;
-  flex-shrink: 0;
   width: 319px;
   height: 187px;
   border-radius: 5px;
@@ -774,7 +772,7 @@ h3, .h3 {
   justify-content: space-around;
   gap: 30px;
 }
-@media (width <= 1140.98px) {
+@media (width <= 767.98px) {
   .tools__count-list {
     align-items: center;
     flex-direction: column;
@@ -810,15 +808,11 @@ h3, .h3 {
 }
 
 .tools__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding-block: 52px;
-}
-@media (width <= 1200.98px) {
-  .tools__list {
-    grid-template-columns: none;
-  }
 }
 
 .black-btn {
@@ -841,6 +835,7 @@ h3, .h3 {
 }
 @media (width > 1140.98px) {
   .new__list {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }

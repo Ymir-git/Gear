@@ -8,7 +8,7 @@
     justify-content: space-around;
     gap: 30px;
 
-    @include tablet {
+    @include mobile {
       align-items: center;
       flex-direction: column;
       gap: 16px;
