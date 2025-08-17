@@ -268,6 +268,38 @@ h3, .h3 {
   background: var(--color-dark-33);
 }
 
+.padge-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.padge-btn li {
+  display: flex;
+  align-items: center;
+}
+.padge-btn li a {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 9px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 2px;
+  color: var(--color-dark);
+  transition: 0.2s ease;
+}
+.padge-btn li a.is-active {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+.padge-btn li a:hover {
+  color: var(--color-light);
+  background-color: var(--color-dark-47);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .tools__list-item {
   max-width: 360px;
   padding: 20px;
@@ -1002,4 +1034,23 @@ h3, .h3 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.popular-tools .container .tools__list {
+  row-gap: 50px;
+  padding-block: 50px 70px;
+}
+@media (width <= 1140.98px) {
+  .popular-tools .container .tools__list {
+    row-gap: 30px;
+    padding-block: 50px 50px;
+  }
+}
+.popular-tools .container .popular-btn {
+  padding-bottom: 63px;
+}
+@media (width <= 1140.98px) {
+  .popular-tools .container .popular-btn {
+    padding-bottom: 60px;
+  }
 }/*# sourceMappingURL=main.css.map */

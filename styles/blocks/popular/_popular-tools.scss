@@ -1,0 +1,25 @@
+@use '../../helpers' as *;
+
+.popular-tools{
+
+  .container {
+
+    .tools__list {
+      row-gap: 50px;
+      padding-block: 50px 70px;
+
+      @include tablet {
+        row-gap: 30px;
+        padding-block: 50px 50px;
+      }
+    }
+    
+    .popular-btn {
+        padding-bottom: 63px;
+
+        @include tablet {
+          padding-bottom: 60px;
+        }
+    }
+  }
+}
