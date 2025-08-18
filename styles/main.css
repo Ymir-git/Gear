@@ -881,9 +881,9 @@ h3, .h3 {
     align-items: center;
     gap: 24px;
   }
-  .new-tags p {
-    color: #335EF7;
-  }
+}
+.new-tags p {
+  color: #335EF7;
 }
 
 .brands .section__inner {
