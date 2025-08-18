@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/svg+xml" href="images/logo.svg">
-  <title>Gear | Popular</title>
+  <title>Gear | Home</title>
   <link rel="stylesheet" href="./styles/main.css">
-  <script src="./scripts/header.js" defer></script>
+  <script src="scripts/header.js" defer></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <div class="menu--close"></div>
     <div class="header__inner container">
       <div class="header__inner-logo">
-        <a href="index.html">
+        <a href="#!">
           <img src="./images/logo.svg" alt="logo" width="40" height="44">
         </a>
       </div>
@@ -24,13 +25,13 @@
             <a class="header__inner-menu-link" href="index.html">HOME</a>
           </li>
           <li class="header__inner-menu-item">
-            <a class="header__inner-menu-link is-active" href="#!">POPULAR</a>
+            <a class="header__inner-menu-link" href="popular.html">POPULAR</a>
           </li>
           <li class="header__inner-menu-item">
             <a class="header__inner-menu-link" href="new.html">NEW COMER</a>
           </li>
           <li class="header__inner-menu-item">
-            <a class="header__inner-menu-link" href="about.html">ABOUT</a>
+            <a class="header__inner-menu-link  is-active" href="#!">ABOUT</a>
           </li>
         </ul>
         <a class="header__inner-menu-btn button" href="#!">Login</a>
@@ -41,200 +42,57 @@
     </div>
   </header>
   <main>
-    <section class="popular-hero">
-      <div class="popular-hero__main section__inner">
-        <h1>Most Popular Tools</h1>
-        <p>Most popular tools for designer and developer</p>
-        <button class="popular-hero__btn button" type="button">Explore now</button>
+    <section class="about-hero">
+      <div class="about-hero__main section__inner">
+        <h1>We enable designer & developers to <span>build amazing things</span></h1>
+        <p>We have transformed product development, making it faster, simpler... better! That's why in just three years we now help more developers build projects than anyone else.</p>
       </div>
     </section>
-    <section class="popular-tools">
-      <div class="container">
-        <ul class="tools__list" id="list">
-          <li class="tools__list-item">
-          <a href="#!">
-            <div class="tools__list-image">
-              <img src="images/main/tools/most-popular/jb_pycharm.svg" alt="figma">
-            </div>
-            <div class="tools__list-main">
-              <div class="tools__list-name">
-                <p>PyCharm</p>
-                <span class="free">FREE</span>
-              </div>
-              <p class="tools__list-description">Intelligent Python Assistance. PyCharm provides smart code completion, code inspections, on-the-fly error.</p>
-              <div class="tools__list-tags">
-                <p>Design</p>
-                <p>Development</p>
-              </div>
-            </div>
-          </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/maze.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>Maze</p>
-                  <span class="free">FREE</span>
-                </div>
-                <p class="tools__list-description">Maze makes it easy to gather user insights by integrating into existing design and prototyping workflow.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/vs_code.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>VS Code</p>
-                  <span class="free">FREE</span>
-                </div>
-                <p class="tools__list-description">Code editor redefined and optimized for building and debugging modern web and
-                  cloud applications.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/xd.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>Adobe XD</p>
-                  <span class="free">FREE</span>
-                </div>
-                <p class="tools__list-description">Adobe XD is your UI/UX design solution platform for website and mobile app
-                  creation.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/invision.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>InVision</p>
-                  <span class="premium">PREMIUM</span>
-                </div>
-                <p class="tools__list-description">InVision is the digital product design platform used to make the world's
-                  best
-                  customer experiences.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/figma.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>Figma</p>
-                  <span class="free">FREE</span>
-                </div>
-                <p class="tools__list-description">Figma helps the teams to create, test, and ship better designs from start
-                  to
-                  finish.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/github.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>Github</p>
-                  <span class="free">FREE</span>
-                </div>
-                <p class="tools__list-description">What is GitHub? GitHub is a code hosting platform for version control and collaboration.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/sketch.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>Sketch</p>
-                  <span class="premium">PREMIUM</span>
-                </div>
-                <p class="tools__list-description">Sketch is a design toolkit built to help you create your best work - from your earliest ideas, through to final artwork.</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="tools__list-item">
-            <a href="#!">
-              <div class="tools__list-image">
-                <img src="images/main/tools/most-popular/webflow.svg" alt="figma">
-              </div>
-              <div class="tools__list-main">
-                <div class="tools__list-name">
-                  <p>Webflow</p>
-                  <span class="limit">FREE 30 DAY</span>
-                </div>
-                <p class="tools__list-description">Build responsive websites in your browser, then launch with a hosting or export your code..</p>
-                <div class="tools__list-tags">
-                  <p>Design</p>
-                  <p>Development</p>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <ul class="popular-btn padge-btn">
-          <li>
-            <a href="popular.html#list">1</a>
-          </li>
-          <li>
-            <a class="is-active" href="#!">2</a>
-          </li>
-          <li>
-            <a href="popular-page-3.html#list">3</a>
-          </li>
-          <li>
-            <a  href="popular-page-3.html#list">Next</a>
-          </li>
-        </ul>
+    <section class="moments section__inner">
+      <div class="moments-text">
+        <h2>Simple is growing. Grow with us.</h2>
+        <p>On Gear, moments of frustration are replaced with simple features that support your every twist and turn, so you can focus on the work that matters.</p>        
       </div>
+      <div class="moments-photo">
+        <div class="photo-1">
+          <img src="images/about/photo1.png" alt="photo1">
+        </div>
+        <div class="photo-2">
+          <img src="images/about/photo2.png" alt="photo2">
+        </div>
+        <div class="photo-3">
+          <img src="images/about/photo3.png" alt="photo3">
+        </div>
+      </div>
+    </section>
+    <section class="team section__inner container">
+      <div class="team__text">
+        <h2>The humans behind the product</h2>
+        <p>Most popular tools for designer and developer</p>
+      </div>
+      <ul class="team__list">
+        <li class="list-item">
+          <img class="list-item__img" src="images/main/reviews/1.jpg" alt="" width="150" height="150">
+          <p class="list-item__person">Wahid Ari</p>
+          <p class="list-item__job">CEO & Co-founder</p>
+          <p class="list-item__description">known as one of the most visionary legal tech entrepreneurs worldwide.</p>
+          <p class="list-item__media">Github - Linkedin</p>
+        </li>
+        <li class="list-item">
+          <img class="list-item__img" src="images/main/reviews/2.jpg" alt="" width="150" height="150">
+          <p class="list-item__person">Ari</p>
+          <p class="list-item__job">Head of Design</p>
+          <p class="list-item__description">expert on distributed work culture, cross-functional product teams and the future of work.</p>
+          <p class="list-item__media">Github - Linkedin</p>
+        </li>
+        <li class="list-item">
+          <img class="list-item__img" src="images/main/reviews/3.jpg" alt="" width="150" height="150">
+          <p class="list-item__person">Wahid</p>
+          <p class="list-item__job">Front-end Engineer</p>
+          <p class="list-item__description">expert on legal innovation, engages actively in debates, and frequently publishes about client-driven</p>
+          <p class="list-item__media">Github - Linkedin</p>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">
@@ -336,4 +194,5 @@
     </div>
   </footer>
 </body>
+
 </html>

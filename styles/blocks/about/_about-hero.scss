@@ -1,0 +1,32 @@
+@use '../../helpers' as *;
+
+.about-hero {
+  color: var(--color-light);
+  background-image: url(../images/about/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+
+  @include tablet1200 {
+    background-size: cover;
+  }
+  
+  &__main {
+    max-width: 692px;
+    margin: 0 auto;
+    text-align: center;
+    padding-block: fluid(100, 67) fluid(135, 110);
+    gap: 24px;
+
+    span {
+      color: var(--color-accent);
+    }
+
+    p {
+      max-width: 571px;
+      font-size: 18px;
+      line-height: 153.5%;
+      letter-spacing: normal; 
+    }
+  }
+}

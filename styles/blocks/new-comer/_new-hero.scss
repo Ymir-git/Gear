@@ -1,22 +1,25 @@
 @use '../../helpers' as *;
 
-.popular-hero {
+.new-hero {
   color: var(--color-light);
   background-color: var(--color-dark);
-  position: relative;
+  padding-block: 31px;
 
   &__main {
-    padding-block: fluid(156, 76) 156px;
-    text-align: center;
-    background-image: url(../images/popular/hero-bg/bg.png);
+    padding-block: 128px; 
+    background-image: url(../images/new-comer/hero-bg.png);
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: cover; 
     background-position: center;
+
+    @include mobile {
+      background-size: contain; 
+    }
 
     p {
       font-size: 20px;
       line-height: 30px;
-      padding-block: 24px fluid(35, 31);
+      padding-block: 24px 31px;
     }
   }
 
@@ -25,4 +28,6 @@
     line-height: 61px;
     padding: 0px 27px 5px;
   }
+  
 }
+
