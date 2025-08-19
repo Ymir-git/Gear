@@ -119,35 +119,35 @@ select {
 
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-Medium.woff2") format("woff2");
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-Regular.woff2") format("woff2");
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto-Regular.woff2") format("woff2");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Alternates";
-  src: url("MontserratAlternates-Bold.woff2") format("woff2");
+  src: url("../fonts/MontserratAlternates-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -643,7 +643,7 @@ h3, .h3 {
 }
 .hero__main-btn {
   font-size: 20px;
-  padding: 20px 32px;
+  padding: 20px 26px;
   max-width: 177px;
 }
 @media (width <= 1140.98px) {
